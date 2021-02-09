@@ -1,1 +1,13 @@
 
+使用说明：
+//实例化轮播view
+  let v=LYBLunboWithTimertwo.init(frame: CGRect.init(x: 0, y: 100, width: WIDTH, height: 200))
+  //设置轮播的图片
+   v.imageList=["lunboone","lunbotwo","lunbothree","lunbofour"]
+    //点击轮播图片后的回调
+     v.didselectBlock={
+           index in
+            print("当前第\(index)")
+         }
+            
+     self.view.addSubview(v)
