@@ -6,7 +6,10 @@
 /*UICollectionview，定时器自动无限轮播，有动画
  let v=LYBLunboWithTimertwo.init(frame: CGRect.init(x: 0, y: 100, width: WIDTH, height: 200))
  v.imageList=["lunboone","lunbotwo","lunbothree","lunbofour"]
- v.index=4
+ v.didselectBlock={
+     index in
+     print("当前第\(index)")
+ }
  self.view.addSubview(v)
  */
 
